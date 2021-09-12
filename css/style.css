@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+body {
+  font-family: sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .banner {
+  border-radius: 5px;
   padding: 50px 0;
   height: 350px;
   background: url("../img/photo-cake5_1.png") 50% no-repeat;
   background-size: cover;
+}
+
+.h1 {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  color: #373737;
+  justify-content: center;
 }
 
 .font {
@@ -18,4 +40,28 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: #8B4513;
+}
+
+.picture {
+  border-radius: 5px;
+  height: 250px;
+  background: url("../img/photo-cake4.png") 50% no-repeat;
+  background-size: cover;
+}
+
+.picture2 {
+  border-radius: 5px;
+  height: 250px;
+  background: url("../img/photo-cake6.png") 50% no-repeat;
+  background-size: cover;
+}
+
+.proFile {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #373737;
 }
