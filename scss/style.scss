@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=	, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
+.banner {
+  padding: 50px 0;
+  height: 350px;
+  background: url("../img/photo-cake5_1.png") 50% no-repeat;
+  background-size: cover;
+}      
+
+
+
+.font {
+  display: flex;
+  justify-content: center;
+  font-family: 'Allison', cursive;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 100%;
+  color: #8B4513;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #8B4513;
+}
