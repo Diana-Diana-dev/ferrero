@@ -93,7 +93,10 @@ body {
 }
 
 .slider_ourProduct {
+  border-radius: 5px;
   background: #D5D6D8;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Слайдер */
@@ -139,26 +142,71 @@ body {
   z-index: 10;
   font-size: 0;
   border: none;
+  width: 30px;
+  height: 100px;
+  margin: -50px 0 0 0;
 }
 
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
   left: 0;
-  width: 60px;
-  height: 60px;
-  border-top: 10px solid var(--color-chocolate, brown);
-  border-right: 10px solid var(--color-chocolate, brown);
-  margin-right: 60px;
-  transform: rotate(-135deg);
+  background: url("../img/left.svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
   right: 0;
-  width: 60px;
-  height: 60px;
-  border-top: 10px solid var(--color-chocolate, brown);
-  border-right: 10px solid var(--color-chocolate, brown);
-  margin-right: 60px;
-  transform: rotate(45deg);
+  background: url("../img/right.svg") 0 0/100% no-repeat;
+}
+
+.about-us {
+  border-radius: 5px;
+  background: url("../img/lazarescu-alexandra-AZJrf0D6Vvo-unsplash.jpg") 50% no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.textColor {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text, black);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.history {
+  border-radius: 5px;
+  height: 300px;
+  background: url("../img/history.jpg") 50% no-repeat;
+  background-size: cover;
+  margin: auto 0;
+}
+
+.footer {
+  background: var(--color-chocolate, brown);
+  min-height: 150px;
+}
+
+.footer__h4 {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150%;
+  color: var(--color-text, black);
+}
+
+.footer__text {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text, black);
 }
