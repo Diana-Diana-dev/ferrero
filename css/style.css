@@ -1,5 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+:root {
+  --color-chocolate: #8B4513;
+  --color-text: #373737;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -18,14 +24,31 @@ body {
 }
 
 .h1 {
-  display: flex;
   font-family: "Noto Sans KR", sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 45px;
   line-height: 130%;
-  color: #373737;
-  justify-content: center;
+  color: var(--color-text, black);
+}
+
+.h1::after {
+  content: "";
+  display: block;
+  border: 2px solid var(--color-chocolate, brown);
+  width: 300px;
+  height: 0;
+  margin: 1rem auto 0;
+  border-radius: 50%;
+}
+
+.h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 130%;
+  color: var(--color-text, black);
 }
 
 .font {
@@ -35,11 +58,15 @@ body {
   font-weight: 700;
   font-size: 55px;
   line-height: 100%;
-  color: #8B4513;
+  color: var(--color-chocolate, brown);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #8B4513;
+  color: var(--color-chocolate, brown);
+}
+
+.news {
+  margin-bottom: 2rem;
 }
 
 .picture {
@@ -57,11 +84,81 @@ body {
 }
 
 .proFile {
-  display: flex;
   font-family: "Noto Sans KR", sans-serif;
   font-style: medium;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  color: #373737;
+  color: var(--color-text, black);
+}
+
+.slider_ourProduct {
+  background: #D5D6D8;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+.slick-slide.slick-center {
+  transform: scale(1.2);
+}
+
+/* Клонированный слайд */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider {
+  position: relative;
+  min-width: 0;
+  padding: 0 50px;
+}
+
+.slider_item {
+  text-align: center;
+}
+
+/* Стрелка */
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  border: none;
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-top: 10px solid var(--color-chocolate, brown);
+  border-right: 10px solid var(--color-chocolate, brown);
+  margin-right: 60px;
+  transform: rotate(-135deg);
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-top: 10px solid var(--color-chocolate, brown);
+  border-right: 10px solid var(--color-chocolate, brown);
+  margin-right: 60px;
+  transform: rotate(45deg);
 }
