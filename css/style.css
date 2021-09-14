@@ -4,6 +4,7 @@
 :root {
   --color-chocolate: #8B4513;
   --color-text: #373737;
+  --color-silver: #D5D6D8;
 }
 
 body {
@@ -94,7 +95,7 @@ body {
 
 .slider_ourProduct {
   border-radius: 5px;
-  background: #D5D6D8;
+  background: var(--color-silver, silver);
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
@@ -177,6 +178,7 @@ body {
   font-size: 22px;
   line-height: 130%;
   color: #FFFFFF;
+  background: #3c1414;
 }
 
 .history {
@@ -187,9 +189,41 @@ body {
   margin: auto 0;
 }
 
-.footer {
+.registration {
+  margin-bottom: 2rem;
+}
+
+.border-color {
+  border: 1px solid var(--color-chocolate, brown);
+}
+
+.btn-color {
+  color: #FFFFFF;
   background: var(--color-chocolate, brown);
+}
+
+.element-animationSection {
+  width: 250px;
+  height: auto;
+}
+
+.element-animation {
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-350px);
+  transition: all 2.5s;
+}
+
+.element-animation .element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(200px);
+}
+
+.footer {
+  background: var(--color-silver, silver);
   min-height: 150px;
+  border-radius: 5px;
 }
 
 .footer__h4 {
