@@ -6,6 +6,14 @@
     --color-silver: #D5D6D8;
 }
 
+// scroll
+// @media (prefers-reduced-motion: no-preference) {
+  
+
+// :root {
+//   scroll-behavior: smooth;
+// }
+// }
 @mixin font_name{
  
     font-family: 'Noto Sans KR', sans-serif;
@@ -93,6 +101,19 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--color-chocolate, brown);
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    display: block;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 992px){
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1);
+}
 }
 .news {
     margin-bottom: 2rem;
@@ -200,7 +221,7 @@ body {
 
 .about-us {
     border-radius: 5px;
-    background: url("../img/lazarescu-alexandra-AZJrf0D6Vvo-unsplash.jpg") 50% no-repeat;
+    background: url("../img/lazarescu-alexandra-AZJrf0D6Vvo-unsplash.jpg") 50% no-repeat fixed;
     background-size: cover;
     margin-bottom: 2rem;
   
@@ -211,7 +232,7 @@ body {
     font-size: 22px;
     line-height: 130%;
     color: #FFFFFF;
-    background: #3c1414;
+    background: #331F18;
  
 }
 .history {
@@ -226,7 +247,7 @@ body {
 
 }
 .border-color {
-    
+    border: 1px solid var(--color-chocolate, brown);
 }
 .btn-color {
     color: #FFFFFF;
@@ -234,13 +255,13 @@ body {
 }
 
 .element-animation {
-    width: 250px;
+    max-width: 250px;
     height: auto;
     opacity: 0;
     transition: all 2.5s ease;
 }
 .element-animation img{
-    
+    width: 100%;
   
 }
 

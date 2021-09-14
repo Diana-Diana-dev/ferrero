@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<head>
+	<header>
 		<div class="container-xl">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
   
@@ -39,7 +39,7 @@
   
 			</nav>
 		</div>
-	</head>
+	</header>
 
 
 
@@ -62,8 +62,8 @@
 		    </section>
 			
 
-			<a name="news"></a>
-    		<section class="news">
+			
+    		<section id="news" class="news">
 		    	<h1 class="text-center py-4 h1">FERRERO ROCHER AND RAFFAELLO</h1>
 		    		<h2 class="text-center py-4 h2">NEWS</h2>
 				    	<div class="row">
@@ -75,16 +75,16 @@
 		    <!-- Force next columns to break to new line at md breakpoint and up -->
 					    <div class="row">
 
-						    <div class="col-lg-6 col-md-6 p-5 proFile">
+						    <div class="col-lg-6 col-md-6 p-5 .order-md-3 order-sm-4 proFile">
 						    	<p>Despite the challenges presented by the global pandemic, Ferrero adapted successfully, putting the health and safety of its employees and consumers at the forefront of its efforts. A critical focus has been to protect workers and farmers in its agricultural supply chains, especially in less developed markets.</p>
 						    </div>
-						    <div class="col-lg-6 col-md-6 picture2"><!-- <img class="w-100 h-100" src="img/photo-cake6.png"> --></div>
+						    <div class="col-lg-6 col-md-6 order-md-4 order-sm-3 picture2"><!-- <img class="w-100 h-100" src="img/photo-cake6.png"> --></div>
 				  			</div>
     		</section>
     		
 
-    		<a name="catalog"></a>
-    		<section class="slider_ourProduct">
+    		
+    		<section id="catalog" class="slider_ourProduct">
     			<h2 class="text-center py-4 h2">OUR PRODUCT</h2>
     				<div class="slider">
 				    	<div class="slider_item">
@@ -105,8 +105,9 @@
 			    	</div>
     		</section> 
 
-    		<a name = "about_us"></a>
-    		<section class="about-us">
+
+    		
+    		<section id="about_us" class="about-us">
     			<h2 class="text-center py-4 h2 text-light">ABOUT US</h2>
     					<div class="row">
 						    <div class="col-lg-6 col-md-8 p-5" >
@@ -150,9 +151,10 @@ Our expertise and tradition with hazelnuts go back to our roots in Alba and the 
 		</div>
 	
 	</main>
-	<a name="contacts"></a>
+
+
 	<div class="container-xl">
-		<footer class="footer">		
+		<footer id="contacts" class="footer">		
 			<div class="row">
 				    <div class="col-lg-4 p-4">
 				      	<h4 class="footer__h4">Location</h4>
@@ -189,6 +191,7 @@ echo '<div class="...">success!</div>';
 <script src="js/slick.min.js"></script>
 <script src="js/slider_slick.js"></script>
 <script src="js/animation.js"></script>	
+<script src="js/scroll.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
