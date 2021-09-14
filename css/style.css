@@ -193,31 +193,22 @@ body {
   margin-bottom: 2rem;
 }
 
-.border-color {
-  border: 1px solid var(--color-chocolate, brown);
-}
-
 .btn-color {
   color: #FFFFFF;
   background: var(--color-chocolate, brown);
 }
 
-.element-animationSection {
+.element-animation {
   width: 250px;
   height: auto;
-}
-
-.element-animation {
-  width: 100%;
   opacity: 0;
-  transform: translateX(-350px);
-  transition: all 2.5s;
+  transition: all 2.5s ease;
 }
 
-.element-animation .element-show {
+.element-animation.element-show {
   opacity: 1;
   transition: all 1.5s;
-  transform: translateX(200px);
+  transform: translateX(250px);
 }
 
 .footer {
