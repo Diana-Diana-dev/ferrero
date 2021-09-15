@@ -19,7 +19,7 @@
     			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       			<span class="navbar-toggler-icon"></span>
     			</button>
-    				<div class="collapse navbar-collapse" class="end" id="navbarSupportedContent">
+    				<div class="collapse navbar-collapse end" id="navbarSupportedContent">
 				      	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
 				        
 					        <li class="nav-item">
@@ -46,6 +46,7 @@
 	<main>
 		<div class="container-xl">
 			<section class="welcom">
+				<h2 class="welcom_h2">welcom to sweet world</h2>
 				<div class="banner">
 					
 					<div class="row align-items-start" >
@@ -123,6 +124,7 @@
 
 
     		<section class="registration">
+    			<h3 class="registration_h3">registration</h3>
     			<div class="row">
 				    <div class="col-lg-6">
 				    	<div class="element-animation">
@@ -167,10 +169,12 @@
 				    <div class="col-lg-4 p-4">
 				      	<h4  class="footer__h4">Follow  Us</h4>
 			<div class="footer__imges">
-				<img src="img/Facebook(1).svg">
-				<img src="img/Instagram(1).svg">
-				<img src="img/Skype(1).svg">
-				<img src="img/Twitter.svg">
+				<ul class="justify-content-start">
+					<li class="mx-2"><a href="#"><img src="img/Facebook(1).svg" alt="Facebook icon"></a></li>
+					<li class="mx-2"><a href="#"><img src="img/Instagram(1).svg" alt="Instagram icon"></a></li>
+					<li class="mx-2"><a href="#"><img src="img/Skype(1).svg" alt="Skype icon"></a></li>
+					<li class="mx-2"><a href="#"><img src="img/Twitter.svg" alt="Twitter icon"></a></li>
+				</ul>
 			</div>
 				    </div>
 				</div>		
@@ -183,7 +187,7 @@
 $msg = 'Имя: '.$_POST['name']."\r\n E-mail: ".$_POST['mail']."\r\n Телефон: ".$_POST['phone'];
 mail("paliki@mail.ru", "Новая заявка!", $msg);
 echo '<div class="...">success!</div>';
-?>	 -->
+?> -->	
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

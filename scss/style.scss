@@ -57,7 +57,7 @@ body {
     font-family: sans-serif;
 }
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
@@ -68,7 +68,10 @@ body {
     height: 350px;
     background: url("../img/photo-cake5_1.png") 50% no-repeat;
     background-size: cover;
-}      
+}  
+.welcom_h2 {
+    display: none;
+}    
 
 .h1 {
     @include font_name;
@@ -221,6 +224,9 @@ body {
     margin-bottom: 2rem;
 
 }
+.registration_h3 {
+  display: none;
+}
 .border-color {
     border: 1px solid var(--color-chocolate, brown);
 }
@@ -258,4 +264,15 @@ body {
 }
 .footer__text {
     @include font_text;
+}
+.footer__imges ul li {
+    list-style: none;
+}
+.footer__imges ul {
+    display: flex;
+    padding-left: 0;
+}
+.footer__imges ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
 }
