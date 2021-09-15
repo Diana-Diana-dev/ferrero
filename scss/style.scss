@@ -130,8 +130,21 @@ body {
     background: url("../img/photo-cake6.png") 50% no-repeat;
     background-size: cover;
 }
+
 .proFile {
     @include font_text;
+}
+.proFile2 {
+    @include font_text;
+}
+
+@media screen and (max-width: 768px){
+.picture2 {
+    order: 1;
+}
+.proFile2 {
+    order: 2;
+}
 }
 .slider_ourProduct {
     border-radius: 5px; 
@@ -142,13 +155,6 @@ body {
 
 
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-
 /* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
@@ -156,37 +162,6 @@ body {
 /* Лента слайдов */
 .slick-track{
     display: flex;
-}
-
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{
-    transform: scale(1.2);
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-
-.slider_item.slick-center{
-
-  // display: block;
-  // transform: scale(1.2);
 }
 
 .slider {
@@ -233,7 +208,7 @@ body {
     line-height: 130%;
     color: #FFFFFF;
     background: #331F18;
- 
+    border-radius: 5px;
 }
 .history {
     border-radius: 5px;

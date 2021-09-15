@@ -104,6 +104,24 @@ body {
   color: var(--color-text, black);
 }
 
+.proFile2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text, black);
+}
+
+@media screen and (max-width: 768px) {
+  .picture2 {
+    order: 1;
+  }
+
+  .proFile2 {
+    order: 2;
+  }
+}
 .slider_ourProduct {
   border-radius: 5px;
   background: var(--color-silver, silver);
@@ -111,9 +129,6 @@ body {
   padding-bottom: 2rem;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -124,19 +139,6 @@ body {
   display: flex;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-.slick-slide.slick-center {
-  transform: scale(1.2);
-}
-
-/* Клонированный слайд */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 .slider {
   position: relative;
   min-width: 0;
@@ -190,6 +192,7 @@ body {
   line-height: 130%;
   color: #FFFFFF;
   background: #331F18;
+  border-radius: 5px;
 }
 
 .history {
